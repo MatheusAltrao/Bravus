@@ -3,17 +3,16 @@ import Link from 'next/link';
 const Hero = () => {
     return (
         <section
-            className='h-[92vh]   flex flex-col items-center justify-center '
+            className='h-[100vh]   flex flex-col items-center justify-center '
             id='hero'
         >
             <header className='space-y-8'>
                 <h2 className=' text-center md:leading-[60px] font-semibold  text-3xl lg:text-[48px] '>
-                    Bem-vindo à Academia <br />{' '}
-                    <span className='font-black'>BRAVUS</span> !
+                    Bravus Jiu-Jitsu
                 </h2>
-                <p className='description text-center'>
-                    Junte-se a nós e faça parte da nossa comunidade de atletas
-                    dedicados. Desperte o lutador dentro de você!
+                <p className='text-xl text-zinc-500 text-center max-w-[700px]'>
+                    Nossa missão é oferecer qualidade e técnica , mas também
+                    valores como disciplina, respeito e superação pessoal.
                 </p>
             </header>
 
