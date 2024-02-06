@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
+import { url } from 'inspector';
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -10,6 +11,13 @@ const roboto = Roboto({
 export const metadata: Metadata = {
     title: 'Bravus',
     description: 'Bravus Jiu-Jitsu',
+    icons: {
+        icon: [
+            {
+                url: '/favicon.jpg',
+            },
+        ],
+    },
 };
 
 export default function RootLayout({

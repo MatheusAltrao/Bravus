@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <section
             id='contact'
-            className='flex flex-col lg:flex-row  items-start lg:items-center justify-between max-w-[1000px] mr-auto '
+            className='flex flex-col lg:flex-row  items-start lg:items-center justify-start  gap-64 '
         >
             <div className='flex items-start flex-col max-w-[400px] gap-8'>
                 <div className='space-y-1'>
