@@ -5,7 +5,7 @@ const Plans = () => {
         <section id='plans'>
             <header>
                 <h2 className='title text-left md:text-center '>
-                    O Plano perfeito para Você
+                    O plano perfeito para você
                 </h2>
                 <p className='description text-left md:text-center'>
                     Oferecemos três emocionantes planos para atender às diversas

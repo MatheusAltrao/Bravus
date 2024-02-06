@@ -5,7 +5,7 @@ const Services = () => {
         <section id='services'>
             <header>
                 <h2 className='title text-left md:text-center'>
-                    Descubra a Variedade de Treinamentos{' '}
+                    Descubra a variedade de treinamentos{' '}
                 </h2>
                 <p className='description text-left md:text-center'>
                     Na academia <span className='font-black'>Bravus</span>,

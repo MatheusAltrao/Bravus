@@ -5,7 +5,7 @@ const App = () => {
         <section id='app'>
             <header>
                 <h2 className='title text-left md:text-center '>
-                    Nosso Aplicativo
+                    Nosso aplicativo
                 </h2>
                 <p className='description text-left md:text-center'>
                     Apresentamos o nosso novo aplicativo exclusivo, uma

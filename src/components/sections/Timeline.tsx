@@ -11,8 +11,8 @@ const Timeline = () => {
         <section id='timeline'>
             <header>
                 <h2 className='title text-left  md:text-center '>
-                    Explore Nosso Cronograma de Treinos na{' '}
-                    <span className='font-bold'>BRAVUS</span>
+                    Explore nosso cronograma de treinos na{' '}
+                    <span className='font-black'>BRAVUS</span>
                 </h2>
                 <p className='description text-left  md:text-center'>
                     Um cronograma bem planejado é essencial para garantir que
