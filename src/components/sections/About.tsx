@@ -9,7 +9,7 @@ const About = () => {
                     <h2 className='title'>Sobre nós</h2>
                     <p className='description max-w-[500px]'>
                         Na Academia <span className='font-black'>Bravus</span>,
-                        localizados em Três lagoas, acreditamos que o Jiu Jitsu
+                        localizados em Três lagoas, acreditamos que o Jiu-Jitsu
                         não é apenas um esporte, mas sim um estilo de vida.
                         Nossos instrutores experientes estão prontos para
                         guiá-lo através das técnicas mais avançadas, enquanto

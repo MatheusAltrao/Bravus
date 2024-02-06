@@ -13,7 +13,7 @@ const Contact = () => {
                         Entre em contato com a gente!
                     </h2>
                     <p className='description text-left '>
-                        Se você está interessado em aprender Jiu Jitsu,
+                        Se você está interessado em aprender Jiu-Jitsu,
                         esclareceremos suas dúvidas, estamos localizados em Três
                         Lagoas, prontos para ouvir você.
                     </p>
@@ -30,18 +30,25 @@ const Contact = () => {
 
             <div className='flex items-start justify-center gap-8 '>
                 <div className='flex items-start justify-start   gap-5 flex-col w-full'>
-                    <div className='flex items-center gap-2'>
-                        <MapPin size={22} />{' '}
-                        <p className=' text-base lg:text-lg text-primary opacity-80'>
-                            Eloy chaves, 999
-                        </p>
-                    </div>
+                    <Link
+                        target='_blank'
+                        href='https://www.google.com/maps/dir/-20.7935958,-51.7150546/bravus+jiu+jitsu/@-20.7856145,-51.7170865,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94909861800e5c29:0x1164755a8d3debb6!2m2!1d-51.6993147!2d-20.7818128?entry=ttu'
+                    >
+                        <div className='flex items-center justify-start gap-2 hover:underline underline-offset-4'>
+                            <MapPin size={22} />{' '}
+                            <p className=' text-base lg:text-lg text-primary opacity-80'>
+                                Av. Dr. Eloy Chaves, 1463
+                            </p>
+                        </div>
+                    </Link>
+
                     <div className='flex items-center justify-start gap-2'>
                         <Phone size={22} />{' '}
                         <p className=' text-base lg:text-lg text-primary opacity-80'>
                             (67) 99999-9999
                         </p>
                     </div>
+
                     <div className='flex items-center justify-start gap-2'>
                         <Mail size={22} />{' '}
                         <p className=' text-base lg:text-lg text-primary opacity-80'>

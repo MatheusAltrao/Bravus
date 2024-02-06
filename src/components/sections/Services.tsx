@@ -17,20 +17,20 @@ const Services = () => {
             <div className='flex items-start justify-center md:flex-row md:justify-between gap-8 flex-col'>
                 <ServiceCard
                     title='Kimono'
-                    subtitle='Jiu Jitsu Tradicional'
+                    subtitle='Jiu-Jitsu tradicional'
                     description='Nossas aulas com kimono são a escolha perfeita. Aprenda técnicas clássicas, aprimore sua precisão e mergulhe na rica história dessa arte marcial. '
                 />
 
                 <ServiceCard
                     title='Nogi'
-                    subtitle='Desafie a Si Mesmo Sem o Kimono'
+                    subtitle='Desafie a si mesmo sem  kimono'
                     description='Treinando sem o uso do kimono, você se concentrará em técnicas que se aplicam a situações do mundo real. Explore um estilo de luta dinâmico e aprimore sua resistência física e mental.'
                 />
 
                 <ServiceCard
                     title='Kids'
-                    subtitle='Crescendo com Confiança e Disciplina'
-                    description='Aulas de Jiu Jitsu para crianças são projetadas para  a vida, incluindo respeito, trabalho em equipe e autoconfiança.'
+                    subtitle='Crescendo com confiança e disciplina'
+                    description='Aulas de Jiu-Jitsu para crianças são projetadas para  a vida, incluindo respeito, trabalho em equipe e autoconfiança.'
                 />
             </div>
         </section>

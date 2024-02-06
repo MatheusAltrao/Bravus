@@ -1,14 +1,14 @@
-import { ArrowUp, Instagram, Phone } from 'lucide-react';
+import { ArrowUp, Instagram, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
 import Whatsapp from '../../../public/whats.svg';
 import Image from 'next/image';
 const Footer = () => {
     return (
-        <footer className='flex px-4 items-start lg:items-center flex-col lg:flex-row justify-between gap-4 w-full max-w-[1200px] mx-auto py-4'>
+        <footer className='flex px-4 py-8 items-start lg:items-center flex-col lg:flex-row justify-between gap-4 w-full max-w-[1200px] mx-auto '>
             <div className='flex items-center justify-between w-full '>
                 <div className='space-y-1 text-xs md:text-sm'>
                     <p className='text-zinc-600'>
-                        Desenvolvido e criado por{' '}
+                        Desenvolvidoo por{' '}
                         <Link target='_blank' href=''>
                             <span className='text-primary hover:underline underline-offset-4'>
                                 Matheus Altrão
@@ -21,6 +21,12 @@ const Footer = () => {
                 </div>
 
                 <div className=' items-center md:hidden flex gap-4'>
+                    <Link
+                        target='_blank'
+                        href='https://www.google.com/maps/dir/-20.7935958,-51.7150546/bravus+jiu+jitsu/@-20.7856145,-51.7170865,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94909861800e5c29:0x1164755a8d3debb6!2m2!1d-51.6993147!2d-20.7818128?entry=ttu'
+                    >
+                        <MapPin size={20} />{' '}
+                    </Link>
                     <Link href=''>
                         <Phone size={18} />
                     </Link>
@@ -35,6 +41,12 @@ const Footer = () => {
 
             <div className=' items-center  gap-4 hidden md:flex '>
                 <div className='flex items-center  gap-2'>
+                    <Link
+                        target='_blank'
+                        href='https://www.google.com/maps/dir/-20.7935958,-51.7150546/bravus+jiu+jitsu/@-20.7856145,-51.7170865,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94909861800e5c29:0x1164755a8d3debb6!2m2!1d-51.6993147!2d-20.7818128?entry=ttu'
+                    >
+                        <MapPin size={20} />{' '}
+                    </Link>
                     <Link
                         className='block w-5 h-5'
                         target='_blank'
