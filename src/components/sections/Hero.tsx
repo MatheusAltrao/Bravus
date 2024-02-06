@@ -10,7 +10,7 @@ const Hero = () => {
                 <h2 className=' text-center md:leading-[60px] font-semibold  text-3xl lg:text-[48px] '>
                     Bravus Jiu-Jitsu
                 </h2>
-                <p className='text-xl text-zinc-500 text-center max-w-[700px]'>
+                <p className=' text-base lg:text-xl text-zinc-500 text-center max-w-[700px]'>
                     Nossa missão é oferecer qualidade e técnica , mas também
                     valores como disciplina, respeito e superação pessoal.
                 </p>
