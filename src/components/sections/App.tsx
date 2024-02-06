@@ -2,7 +2,7 @@ import AppCard from '../cards/appCard/AppCard';
 
 const App = () => {
     return (
-        <section id='app' className='space-y-16'>
+        <section id='app'>
             <header>
                 <h2 className='title text-left md:text-center '>
                     Nosso Aplicativo

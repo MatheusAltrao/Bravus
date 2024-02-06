@@ -2,7 +2,7 @@ import ServiceCard from '../cards/serviceCard/ServiceCard';
 
 const Services = () => {
     return (
-        <section id='services' className='space-y-16'>
+        <section id='services'>
             <header>
                 <h2 className='title text-left md:text-center'>
                     Descubra a Variedade de Treinamentos{' '}

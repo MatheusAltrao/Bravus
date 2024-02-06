@@ -2,7 +2,7 @@ import PlanCard from '../cards/planCard/PlanCard';
 
 const Plans = () => {
     return (
-        <section id='plans' className='space-y-16'>
+        <section id='plans'>
             <header>
                 <h2 className='title text-left md:text-center '>
                     O Plano perfeito para Você

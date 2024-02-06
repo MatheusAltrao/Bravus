@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <section
-            className='h-[92vh]   flex flex-col items-center justify-center space-y-16'
+            className='h-[92vh]   flex flex-col items-center justify-center '
             id='hero'
         >
             <header className='space-y-8'>

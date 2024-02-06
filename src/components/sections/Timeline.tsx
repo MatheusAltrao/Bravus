@@ -8,7 +8,7 @@ import {
 
 const Timeline = () => {
     return (
-        <section id='timeline' className='space-y-16'>
+        <section id='timeline'>
             <header>
                 <h2 className='title text-left  md:text-center '>
                     Explore Nosso Cronograma de treinos na{' '}

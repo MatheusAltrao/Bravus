@@ -3,7 +3,7 @@ import { Check } from 'lucide-react';
 
 const PlanCard = () => {
     return (
-        <div className='bg-white rounded p-8 w-full max-w-[300px] h-[458px] flex flex-col '>
+        <div className='bg-white rounded p-8 w-full md:max-w-[300px] h-[458px] flex flex-col '>
             <div>
                 <p>Plano 1</p>
                 <h3 className='font-bold text-2xl'>R$ 149,90</h3>

@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <section
             id='contact'
-            className='space-y-16 flex flex-col lg:flex-row  items-start lg:items-center justify-between max-w-[1000px] mr-auto '
+            className='flex flex-col lg:flex-row  items-start lg:items-center justify-between max-w-[1000px] mr-auto '
         >
             <div className='flex items-start flex-col max-w-[400px] gap-4'>
                 <h2 className='title text-left  '>
@@ -21,21 +21,21 @@ const Contact = () => {
 
             <div className='flex items-start justify-center gap-8 '>
                 <div className='flex items-start justify-start   gap-5 flex-col w-full'>
-                    <div className='flex items-start gap-2'>
-                        <MapPin size={26} />{' '}
-                        <p className='text-lg text-primary opacity-80'>
+                    <div className='flex items-center gap-2'>
+                        <MapPin size={22} />{' '}
+                        <p className=' text-base lg:text-lg text-primary opacity-80'>
                             Eloy chaves, 999
                         </p>
                     </div>
-                    <div className='flex items-start justify-start gap-2'>
-                        <Phone size={26} />{' '}
-                        <p className='text-lg text-primary opacity-80'>
+                    <div className='flex items-center justify-start gap-2'>
+                        <Phone size={22} />{' '}
+                        <p className=' text-base lg:text-lg text-primary opacity-80'>
                             (67) 99999-9999
                         </p>
                     </div>
-                    <div className='flex items-start justify-start gap-2'>
-                        <Mail size={26} />{' '}
-                        <p className='text-lg text-primary opacity-80'>
+                    <div className='flex items-center justify-start gap-2'>
+                        <Mail size={22} />{' '}
+                        <p className=' text-base lg:text-lg text-primary opacity-80'>
                             bravus@gmail.com
                         </p>
                     </div>
