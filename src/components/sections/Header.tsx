@@ -13,7 +13,7 @@ const Header = () => {
                     </span>
                 </div>
 
-                <div className=' items-center gap-4 md:flex hidden'>
+                <div className=' items-center gap-4 lg:flex hidden'>
                     <Link className='header-link ' href='#hero'>
                         Início
                     </Link>
@@ -37,7 +37,12 @@ const Header = () => {
                     </Link>
                 </div>
 
-                <button className='btn-2'>AGENDAR AULA</button>
+                <Link
+                    target='_blank'
+                    href=' https://wa.me//556792769576?text=Quero%20agendar%20a%20minha%20aula%20de%20Jiu%20Jitsu'
+                >
+                    <button className='btn-2'>AGENDAR AULA</button>
+                </Link>
             </div>
         </header>
     );

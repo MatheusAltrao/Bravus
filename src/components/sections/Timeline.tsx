@@ -11,7 +11,7 @@ const Timeline = () => {
         <section id='timeline'>
             <header>
                 <h2 className='title text-left  md:text-center '>
-                    Explore Nosso Cronograma de treinos na{' '}
+                    Explore Nosso Cronograma de Treinos na{' '}
                     <span className='font-bold'>BRAVUS</span>
                 </h2>
                 <p className='description text-left  md:text-center'>

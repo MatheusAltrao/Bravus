@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Hero = () => {
     return (
         <section
@@ -15,7 +17,12 @@ const Hero = () => {
                 </p>
             </header>
 
-            <button className='btn-1'>COMEÇAR AGORA!</button>
+            <Link
+                target='_blank'
+                href=' https://wa.me//556792769576?text=Quero%20agendar%20a%20minha%20aula%20de%20Jiu%20Jitsu'
+            >
+                <button className='btn-1'>COMEÇAR AGORA!</button>
+            </Link>
         </section>
     );
 };
