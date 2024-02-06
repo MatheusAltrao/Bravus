@@ -7,8 +7,10 @@ const Header = () => {
         <header className=' w-full bg-primary fixed top-0 left-0'>
             <div className='w-full max-w-[1200px] mx-auto p-4 text-white flex items-center justify-between'>
                 <div className='flex items-center gap-4'>
-                    <Image src={Logo} alt='' width={46} height={46} />
-                    <span className='font-black text-2xl'>BRAVUS</span>
+                    <Image src={Logo} alt='' width={36} height={36} />
+                    <span className='font-black text-xl lg:text-2xl'>
+                        BRAVUS
+                    </span>
                 </div>
 
                 <div className=' items-center gap-4 md:flex hidden'>

@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import Logo from '../../../public/logoCircle.png';
+
 const About = () => {
     return (
         <section id='about'>
@@ -16,7 +19,14 @@ const About = () => {
                     </p>
                 </div>
 
-                <div className=' w-full max-w-[500px] h-[427px] bg-primary rounded '></div>
+                <Image
+                    className='about-image  object-contain w-full max-w-[500px] h-[427px] '
+                    width={400}
+                    height={380}
+                    alt=''
+                    src={Logo}
+                    objectFit='contain'
+                />
             </div>
         </section>
     );
