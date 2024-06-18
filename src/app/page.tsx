@@ -5,29 +5,28 @@ import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
 import Header from '@/components/sections/Header';
 import Hero from '@/components/sections/Hero';
-import Plans from '@/components/sections/Plans';
 import Services from '@/components/sections/Services';
 import Timeline from '@/components/sections/Timeline';
 
 export default function Home() {
-    return (
-        <div className='min-h-screen w-screen  '>
-            <Header />
-            <Hero />
-            <Divider />
-            <About />
-            <Divider />
-            <Services />
-            <Divider />
-            <Timeline />
-            <Divider />
-            <App />
-            <Divider />
-            <Plans />
-            <Divider />
-            <Contact />
-            <Divider />
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="min-h-screen w-screen  ">
+      <Header />
+      <Hero />
+      <Divider />
+      <About />
+      <Divider />
+      <Services />
+      <Divider />
+      <Timeline />
+      <Divider />
+      <App />
+      <Divider />
+      {/* <Plans /> */}
+      <Divider />
+      <Contact />
+      <Divider />
+      <Footer />
+    </div>
+  );
 }
