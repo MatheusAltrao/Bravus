@@ -11,8 +11,9 @@ const Hero = () => {
           Bravus Jiu-Jitsu
         </h2>
         <p className=" text-base lg:text-xl text-zinc-500 text-center max-w-[700px]">
-          A missão da Bravus é forjar homens e mulheres fortes. Não somente fortes em força e
-          técnica, para proteger-se e proteger aqueles que amam, mas forjá-los também por dentro.
+          Nossa missão é forjar homens e mulheres fortes. Não somente fortes fisicamente, mas também
+          guiados nas grandes virtudes a partir dos ensinamentos técnicos e filosóficos do Jiu
+          Jitsu.
         </p>
       </header>
 

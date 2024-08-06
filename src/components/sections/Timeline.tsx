@@ -1,3 +1,4 @@
+import { weekTimeline } from '@/helpers/weekTimeline';
 import TimelineWeek from '../cards/timelineWeek/TimelineWeek';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 
@@ -14,60 +15,92 @@ const Timeline = () => {
         </p>
       </header>
       <div className=" hidden lg:flex items-end justify-center flex-wrap gap-4">
-        <TimelineWeek
-          day="Seg"
-          typeFirst=""
-          timeFirst=""
-          typeSecond="Kimono"
-          timeSecond="17:30 às 19:00"
-          typeThird="Kimono"
-          timeThird=" 19:30 às20:30"
-        />
-        <TimelineWeek
-          day="Ter"
-          typeFirst="Kids"
-          timeFirst="16:00 às 17:00"
-          typeSecond="Kimono"
-          timeSecond="17:30 às 19:00"
-          typeThird="Kimono"
-          timeThird="19:30 às 20:30"
-        />
-        <TimelineWeek
-          day="Qua"
-          typeFirst=""
-          timeFirst=""
-          typeSecond="Kimono"
-          timeSecond="17:30 às 19:00"
-          typeThird="Kimono"
-          timeThird=" 19:30 às20:30"
-        />
-        <TimelineWeek
-          day="Qui"
-          typeFirst="Kids"
-          timeFirst="16:00 às 17:00"
-          typeSecond="Kimono"
-          timeSecond="17:30 às 19:00"
-          typeThird="Kimono"
-          timeThird="19:30 às 20:30"
-        />
-        <TimelineWeek
-          day="Sex"
-          typeFirst=""
-          timeFirst=""
-          typeSecond="Nogi"
-          timeSecond="18:00 às 19:00"
-          typeThird=""
-          timeThird=""
-        />
-        <TimelineWeek
-          day="Sáb"
-          typeFirst="Drill"
-          timeFirst="08:00 às 09:00"
-          typeSecond="Livre"
-          timeSecond="16:00 às 17:00"
-          typeThird=""
-          timeThird=""
-        />
+        <div className="space-y-4">
+          <h3 className="text-center font-medium text-4xl">Segunda</h3>
+
+          <div className="space-y-2">
+            {weekTimeline.monday.map((item, index) => (
+              <TimelineWeek
+                to={item.to}
+                key={index}
+                time={item.time}
+                type={item.type}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className="text-center font-medium text-4xl">Terça</h3>
+
+          <div className="space-y-2">
+            {weekTimeline.tuesday.map((item, index) => (
+              <TimelineWeek
+                to={item.to}
+                key={index}
+                time={item.time}
+                type={item.type}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-center font-medium text-4xl">Quarta</h3>
+
+          <div className="space-y-2">
+            {weekTimeline.wednesday.map((item, index) => (
+              <TimelineWeek
+                to={item.to}
+                key={index}
+                time={item.time}
+                type={item.type}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-center font-medium text-4xl">Quinta</h3>
+
+          <div className="space-y-2">
+            {weekTimeline.thursday.map((item, index) => (
+              <TimelineWeek
+                to={item.to}
+                key={index}
+                time={item.time}
+                type={item.type}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-center font-medium text-4xl">Sexta</h3>
+
+          <div className="space-y-2">
+            {weekTimeline.friday.map((item, index) => (
+              <TimelineWeek
+                to={item.to}
+                key={index}
+                time={item.time}
+                type={item.type}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className="text-center font-medium text-4xl">Sábado</h3>
+
+          <div className="space-y-2">
+            {weekTimeline.saturday.map((item, index) => (
+              <TimelineWeek
+                to={item.to}
+                key={index}
+                time={item.time}
+                type={item.type}
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="flex items-start  lg:hidden justify-center w-full flex-col gap-4">
@@ -79,14 +112,17 @@ const Timeline = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>Segunda-Feira</AccordionTrigger>
             <AccordionContent className="flex items-start flex-col gap-2">
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80"> Kimono 17:30 às 19:00</p>
-              </div>
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80"> Kimono 19:30 às 20:30</p>
-              </div>
+              {weekTimeline.monday.map((item, index) => (
+                <div
+                  key={index}
+                  className={` flex items-center gap-2 ${item.type == '' && 'hidden'}`}
+                >
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                  <p className="opacity-80">
+                    {item.type} - {item.time} {item.to && `- ${item.to}`}
+                  </p>
+                </div>
+              ))}
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -98,18 +134,17 @@ const Timeline = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>Terça-Feira</AccordionTrigger>
             <AccordionContent className="flex items-start flex-col gap-2">
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary  rounded-full" />
-                <p className="opacity-80"> Kids 16:00 às 17:00</p>
-              </div>
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80">Kimono 17:30 às 19:00</p>
-              </div>
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80">Kimono 19:30 às 20:30</p>
-              </div>
+              {weekTimeline.tuesday.map((item, index) => (
+                <div
+                  key={index}
+                  className={` flex items-center gap-2 ${item.type == '' && 'hidden'}`}
+                >
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                  <p className="opacity-80">
+                    {item.type} - {item.time} {item.to && `- ${item.to}`}
+                  </p>
+                </div>
+              ))}
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -121,14 +156,17 @@ const Timeline = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>Quarta-Feira</AccordionTrigger>
             <AccordionContent className="flex items-start flex-col gap-2">
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80"> Kimono 17:30 às 19:00</p>
-              </div>
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80"> Kimono 19:30 às 20:30</p>
-              </div>
+              {weekTimeline.wednesday.map((item, index) => (
+                <div
+                  key={index}
+                  className={` flex items-center gap-2 ${item.type == '' && 'hidden'}`}
+                >
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                  <p className="opacity-80">
+                    {item.type} - {item.time} {item.to && `- ${item.to}`}
+                  </p>
+                </div>
+              ))}
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -140,18 +178,17 @@ const Timeline = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>Quinta-Feira</AccordionTrigger>
             <AccordionContent className="flex items-start flex-col gap-2">
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary  rounded-full" />
-                <p className="opacity-80"> Kids 16:00 às 17:00</p>
-              </div>
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80">Kimono 17:30 às 19:00</p>
-              </div>
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80">Nogi 19:30 às 20:30</p>
-              </div>
+              {weekTimeline.thursday.map((item, index) => (
+                <div
+                  key={index}
+                  className={` flex items-center gap-2 ${item.type == '' && 'hidden'}`}
+                >
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                  <p className="opacity-80">
+                    {item.type} - {item.time} {item.to && `- ${item.to}`}
+                  </p>
+                </div>
+              ))}
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -163,10 +200,17 @@ const Timeline = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>Sexta-Feira</AccordionTrigger>
             <AccordionContent className="flex items-start flex-col gap-2">
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80"> Nogi 18:00 às 19:00</p>
-              </div>
+              {weekTimeline.friday.map((item, index) => (
+                <div
+                  key={index}
+                  className={` flex items-center gap-2 ${item.type == '' && 'hidden'}`}
+                >
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                  <p className="opacity-80">
+                    {item.type} - {item.time} {item.to && `- ${item.to}`}
+                  </p>
+                </div>
+              ))}
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -178,14 +222,17 @@ const Timeline = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>Sábado</AccordionTrigger>
             <AccordionContent className="flex items-start flex-col gap-2">
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80"> Drill 08:00 às 9:00</p>
-              </div>
-              <div className="flex items-center  gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full" />
-                <p className="opacity-80"> Drill 08:00 às 9:00</p>
-              </div>
+              {weekTimeline.saturday.map((item, index) => (
+                <div
+                  key={index}
+                  className={` flex items-center gap-2 ${item.type == '' && 'hidden'}`}
+                >
+                  <div className="w-2 h-2 bg-primary rounded-full" />
+                  <p className="opacity-80">
+                    {item.type} - {item.time} {item.to && `- ${item.to}`}
+                  </p>
+                </div>
+              ))}
             </AccordionContent>
           </AccordionItem>
         </Accordion>
