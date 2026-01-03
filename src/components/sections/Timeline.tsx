@@ -1,8 +1,38 @@
+"use client";
+
 import { weekTimeline } from "@/helpers/weekTimeline";
 import TimelineWeek from "../cards/timelineWeek/TimelineWeek";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 
 const Timeline = () => {
+  async function downloadImage() {
+    const imageUrl = "/class-schedule.png";
+
+    try {
+      const response = await fetch(imageUrl);
+      if (!response.ok) throw new Error("Falha ao baixar imagem");
+
+      const blob = await response.blob();
+      const objectUrl = URL.createObjectURL(blob);
+
+      const link = document.createElement("a");
+      link.href = objectUrl;
+      link.download = "cronograma-de-aulas.png";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+
+      URL.revokeObjectURL(objectUrl);
+    } catch {
+      const link = document.createElement("a");
+      link.href = imageUrl;
+      link.download = "cronograma-de-aulas.png";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
+  }
+
   return (
     <section id="timeline">
       <header>
@@ -162,6 +192,12 @@ const Timeline = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+      </div>
+
+      <div className="flex items-center justify-center">
+        <button onClick={downloadImage} className="btn-1 ">
+          Baixar Cronograma de aulas
+        </button>
       </div>
     </section>
   );
