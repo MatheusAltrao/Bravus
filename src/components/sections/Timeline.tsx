@@ -1,6 +1,6 @@
 "use client";
 
-import { weekTimeline } from "@/helpers/weekTimeline";
+import { weekTimeline } from "@/const/weekTimeline";
 import TimelineWeek from "../cards/timelineWeek/TimelineWeek";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 
