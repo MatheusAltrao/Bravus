@@ -1,4 +1,4 @@
-import ServiceCard from '../cards/serviceCard/ServiceCard';
+import ServiceCard from "../cards/serviceCard/ServiceCard";
 
 const Services = () => {
   return (
@@ -6,9 +6,8 @@ const Services = () => {
       <header>
         <h2 className="title text-left md:text-center">Descubra a variedade de treinamentos </h2>
         <p className="description text-left md:text-center">
-          Na academia <span className="font-black">Bravus</span>, oferecemos uma ampla gama de
-          serviços de treinamento de Jiu Jitsu para atender a todas as idades e níveis de
-          habilidade.{' '}
+          Na academia <span className="font-black">Black Ops</span>, oferecemos uma ampla gama de serviços de treinamento de Jiu Jitsu para atender a
+          todas as idades e níveis de habilidade.{" "}
         </p>
       </header>
 

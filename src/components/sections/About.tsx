@@ -1,8 +1,8 @@
-'use client';
-import Image from 'next/image';
-import { useRef } from 'react';
-import 'swiper/css';
-import Logo from '../../../public/logoCircle.png';
+"use client";
+import Image from "next/image";
+import { useRef } from "react";
+import "swiper/css";
+import Logo from "../../../public/logoCircle.png";
 
 const About = () => {
   const swiperMobile = useRef<any>(null);
@@ -14,32 +14,25 @@ const About = () => {
           <h2 className="title">Sobre nós</h2>
           <div className="space-y-3">
             <p className="description max-w-[500px]">
-              A escola <span className="font-black">Bravus</span> foi fundada em abril de 2020, no
-              auge de uma pandemia que deixaria sequelas por todo o mundo. Foi com muita fibra e
-              vontade que seus professores, e poucos alunos à época, cresceram em meio à adversidade
-              que se estendia, naquele momento, elevando o nível do Jiu Jitsu na cidade de Três
-              Lagoas e região.
+              A academia <span className="font-black">Black Ops</span> foi fundada em abril de 2020, no auge de uma pandemia que deixaria sequelas por
+              todo o mundo. Foi com muita fibra e vontade que seus professores, e poucos alunos à época, cresceram em meio à adversidade que se
+              estendia, naquele momento, elevando o nível do Jiu Jitsu na cidade de Três Lagoas e região.
             </p>
 
             <p className="description max-w-[500px]">
-              Nosso compromisso está sedimentado no profissionalismo e na metodologia de ensino que
-              se volta a esclarecer quaisquer dúvidas de nossos alunos, no que diz respeito às
-              técnicas aprendidas, virtudes desenvolvidas e graduações alcançadas.
+              Nosso compromisso está sedimentado no profissionalismo e na metodologia de ensino que se volta a esclarecer quaisquer dúvidas de nossos
+              alunos, no que diz respeito às técnicas aprendidas, virtudes desenvolvidas e graduações alcançadas.
             </p>
 
             <p className="description max-w-[500px]">
-              Os professores e instrutores da Bravus irão ajudá-lo a trilhar o verdadeiro Bushido
-              (caminho do guerreiro), mediante as técnicas de combate e filosofia de vida de uma
-              arte marcial milenar que, até os dias atuais, se prova eficiente em todas as áreas de
-              nossas vidas: o Jiu Jitsu!
+              Os professores e instrutores da Black Ops irão ajudá-lo a trilhar o verdadeiro Bushido (caminho do guerreiro), mediante as técnicas de
+              combate e filosofia de vida de uma arte marcial milenar que, até os dias atuais, se prova eficiente em todas as áreas de nossas vidas: o
+              Jiu Jitsu!
             </p>
           </div>
         </div>
         <div>
-          <Image
-            src={Logo}
-            alt="Bravus"
-          />
+          <Image src={Logo} alt="Bravus" />
         </div>
         {/*  <div className="grid grid-cols-2 w-full max-w-[500px] grid-rows-4 gap-4">
           <div className="rounded-lg col-span-2 row-span-2 bg-muted-foreground w-full object-cover"></div>
