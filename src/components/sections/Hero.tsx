@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="h-[100vh]   flex flex-col items-center justify-center " id="hero">
       <header className="space-y-8">
-        <h2 className=" text-center md:leading-[60px] font-semibold  text-3xl lg:text-[48px] ">Black Ops </h2>
+        <h1 className=" text-center md:leading-[60px] font-semibold  text-3xl lg:text-[48px] ">Black Ops - Jiu Jitsu Três Lagoas</h1>
         <p className=" text-base lg:text-xl text-zinc-500 text-center max-w-[700px]">
           Nossa missão é forjar homens e mulheres fortes. Não somente fortes fisicamente, mas também guiados nas grandes virtudes a partir dos
           ensinamentos técnicos e filosóficos do Jiu Jitsu.

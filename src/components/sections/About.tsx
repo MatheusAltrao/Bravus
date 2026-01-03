@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
         <div>
-          <Image src={Logo} alt="Bravus" />
+          <Image src={Logo} alt="Logo Black Ops Jiu Jitsu - Academia de artes marciais em Três Lagoas" priority />
         </div>
         {/*  <div className="grid grid-cols-2 w-full max-w-[500px] grid-rows-4 gap-4">
           <div className="rounded-lg col-span-2 row-span-2 bg-muted-foreground w-full object-cover"></div>
