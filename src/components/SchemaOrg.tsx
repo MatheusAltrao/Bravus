@@ -21,7 +21,7 @@ export default function SchemaOrg() {
     },
     priceRange: "$$",
     sport: "Jiu-Jitsu",
-    sameAs: ["https://www.instagram.com/bravus.academy/"],
+    sameAs: ["https://www.instagram.com/blackopsjiujitsu/"],
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

@@ -26,7 +26,7 @@ const Footer = () => {
           <Link href="">
             <Phone size={18} />
           </Link>
-          <Link target="_blank" href="https://www.instagram.com/bravus.academy/">
+          <Link target="_blank" href="https://www.instagram.com/blackopsjiujitsu/">
             <Instagram size={18} />
           </Link>
         </div>
@@ -43,7 +43,7 @@ const Footer = () => {
           <Link className="block w-5 h-5" target="_blank" href=" https://wa.me//556792769576?text=Estou%20interessado%20em%20fazer%20Jiu%20Jitsu">
             <Image src={Whatsapp} alt="WhatsApp Black Ops Jiu Jitsu" width={18} height={18} />
           </Link>
-          <Link target="_blank" href="https://www.instagram.com/bravus.academy/">
+          <Link target="_blank" href="https://www.instagram.com/blackopsjiujitsu/">
             <Instagram size={18} />
           </Link>
         </div>
